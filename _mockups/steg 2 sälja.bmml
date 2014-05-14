@@ -1,0 +1,109 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1840" measuredH="1416" mockupW="1800" mockupH="1382">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="40" y="34" w="1800" h="1382" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Oppstore%0Ahttp%3A//oppstore.se</text>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Canvas" x="40" y="105" w="1800" h="70" measuredW="100" measuredH="70" zOrder="3" locked="false" isInGroup="-1"/>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Title" x="55" y="119" w="-1" h="-1" measuredW="171" measuredH="43" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Oppstore</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::TabBar" x="1463" y="148" w="327" h="27" measuredW="317" measuredH="100" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <selectedIndex>0</selectedIndex>
+        <size>14</size>
+        <text>Utveckla%2C%20Avveckla%2C%20F%F6rv%E4rva%2C%20F%F6rvalta</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Canvas" x="40" y="171" w="1800" h="39" measuredW="100" measuredH="70" zOrder="6" locked="false" isInGroup="-1"/>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::LinkBar" x="695" y="181" w="-1" h="-1" measuredW="331" measuredH="19" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>F%E4rdiga%20aff%E4rsdokument%2C%20L%E4gg%20upp%20jobb%2C%20S%F6k%20kapital</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::Title" x="78" y="291" w="-1" h="-1" measuredW="93" measuredH="43" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>S%E4lja</text>
+      </controlProperties>
+    </control>
+    <control controlID="25" controlTypeID="com.balsamiq.mockups::ComboBox" x="248" y="476" w="123" h="-1" measuredW="118" measuredH="24" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Norra%20Sm%E5land</text>
+      </controlProperties>
+    </control>
+    <control controlID="31" controlTypeID="com.balsamiq.mockups::Button" x="460" y="683" w="-1" h="-1" measuredW="87" measuredH="27" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Ladda%20Upp</text>
+      </controlProperties>
+    </control>
+    <control controlID="34" controlTypeID="com.balsamiq.mockups::CheckBox" x="110" y="598" w="247" h="25" measuredW="243" measuredH="22" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Ska%20vi%20g%F6ra%20prospekt%3F%20%28Kostnad%2025K%29</text>
+      </controlProperties>
+    </control>
+    <control controlID="35" controlTypeID="com.balsamiq.mockups::FieldSet" x="78" y="378" w="501" h="358" measuredW="200" measuredH="170" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Gratis%3A%20Ansl%E5%20f%F6retagsdata</text>
+      </controlProperties>
+    </control>
+    <control controlID="41" controlTypeID="com.balsamiq.mockups::ButtonBar" x="40" y="210" w="1800" h="41" measuredW="372" measuredH="27" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <hrefs>so%u0308k%20kapital%20steg1%26bm%3Bso%u0308k%20kapital%20steg1.bmml%26bm%3Bso%u0308k%20kapital%20steg1.bmml%26bm%3Bso%u0308k%20kapital%20steg1.bmml%2Cso%u0308k%20kapital%20steg2%26bm%3Bso%u0308k%20kapital%20steg2.bmml%26bm%3Bso%u0308k%20kapital%20steg2.bmml%26bm%3Bso%u0308k%20kapital%20steg2.bmml%2Cso%u0308k%20kapital%20steg3%26bm%3Bso%u0308k%20kapital%20steg3.bmml%26bm%3Bso%u0308k%20kapital%20steg3.bmml%26bm%3Bso%u0308k%20kapital%20steg3.bmml</hrefs>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%220%2C176%2C764%2C217%22%20href%3D%22so%25CC%2588k%2520kapital%2520steg1.bmml%22%20alt%3D%22so%u0308k%20kapital%20steg1%22%20id%3D%2241%22/%3E%3Carea%20shape%3D%22rect%22%20coords%3D%22764%2C176%2C1431%2C217%22%20href%3D%22so%25CC%2588k%2520kapital%2520steg2.bmml%22%20alt%3D%22so%u0308k%20kapital%20steg2%22%20id%3D%2241%22/%3E%3Carea%20shape%3D%22rect%22%20coords%3D%221431%2C176%2C1798%2C217%22%20href%3D%22so%25CC%2588k%2520kapital%2520steg3.bmml%22%20alt%3D%22so%u0308k%20kapital%20steg3%22%20id%3D%2241%22/%3E</map>
+        <selectedIndex>2</selectedIndex>
+        <text>Steg%201%3A%20S%E4lja/Likvidera%2C%20Steg%202%3A%20Information%2C%20%20Steg%203%3A%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::Canvas" x="40" y="1316" w="1800" h="65" measuredW="100" measuredH="70" zOrder="12" locked="false" isInGroup="-1"/>
+    <control controlID="43" controlTypeID="com.balsamiq.mockups::Button" x="40" y="1318" w="193" h="60" measuredW="125" measuredH="27" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>14540253</color>
+        <text>F%F6reg%E5ende%20steg</text>
+      </controlProperties>
+    </control>
+    <control controlID="44" controlTypeID="com.balsamiq.mockups::Button" x="1642" y="1320" w="193" h="60" measuredW="89" measuredH="27" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>2848996</color>
+        <text>N%E4sta%20steg</text>
+      </controlProperties>
+    </control>
+    <control controlID="45" controlTypeID="com.balsamiq.mockups::ComboBox" x="248" y="448" w="123" h="-1" measuredW="77" measuredH="24" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Bransch</text>
+      </controlProperties>
+    </control>
+    <control controlID="46" controlTypeID="com.balsamiq.mockups::ComboBox" x="248" y="524" w="123" h="-1" measuredW="101" measuredH="24" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Oms%E4ttning</text>
+      </controlProperties>
+    </control>
+    <control controlID="47" controlTypeID="com.balsamiq.mockups::ComboBox" x="248" y="556" w="-1" h="-1" measuredW="123" measuredH="24" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Reslutat%20f.%20skatt</text>
+      </controlProperties>
+    </control>
+    <control controlID="48" controlTypeID="com.balsamiq.mockups::Label" x="110" y="448" w="-1" h="-1" measuredW="66" measuredH="21" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>V%E4lj%20Branch</text>
+      </controlProperties>
+    </control>
+    <control controlID="49" controlTypeID="com.balsamiq.mockups::Label" x="110" y="478" w="-1" h="-1" measuredW="56" measuredH="21" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>V%E4lj%20Plats</text>
+      </controlProperties>
+    </control>
+    <control controlID="50" controlTypeID="com.balsamiq.mockups::Label" x="110" y="526" w="-1" h="-1" measuredW="97" measuredH="21" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>V%E4lj%20Oms%E4ttning</text>
+      </controlProperties>
+    </control>
+    <control controlID="51" controlTypeID="com.balsamiq.mockups::Label" x="110" y="558" w="-1" h="-1" measuredW="120" measuredH="21" zOrder="21" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>V%E4lj%20Resultat%20f.%20skatt</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

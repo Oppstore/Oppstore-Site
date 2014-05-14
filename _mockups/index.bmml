@@ -11,13 +11,13 @@
         <text>Oppstore</text>
       </controlProperties>
     </control>
-    <control controlID="10" controlTypeID="com.balsamiq.mockups::Canvas" x="1446" y="616" w="379" h="643" measuredW="100" measuredH="70" zOrder="3" locked="false" isInGroup="-1"/>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Canvas" x="1446" y="616" w="379" h="357" measuredW="100" measuredH="70" zOrder="3" locked="false" isInGroup="-1"/>
     <control controlID="11" controlTypeID="com.balsamiq.mockups::SubTitle" x="1541" y="631" w="-1" h="-1" measuredW="169" measuredH="27" zOrder="4" locked="false" isInGroup="-1">
       <controlProperties>
         <text>F%F6retag%20till%20salu</text>
       </controlProperties>
     </control>
-    <control controlID="12" controlTypeID="com.balsamiq.mockups::List" x="1461" y="673" w="328" h="555" measuredW="100" measuredH="126" zOrder="5" locked="false" isInGroup="-1">
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::List" x="1461" y="648" w="328" h="308" measuredW="100" measuredH="126" zOrder="5" locked="false" isInGroup="-1">
       <controlProperties>
         <borderStyle>none</borderStyle>
       </controlProperties>
@@ -81,7 +81,7 @@
         <icon>EmptyIcon%7Cxxlarge</icon>
       </controlProperties>
     </control>
-    <control controlID="41" controlTypeID="com.balsamiq.mockups::Paragraph" x="107" y="785" w="-1" h="-1" measuredW="200" measuredH="80" zOrder="20" locked="false" isInGroup="-1">
+    <control controlID="41" controlTypeID="com.balsamiq.mockups::Paragraph" x="107" y="785" w="-1" h="-1" measuredW="275" measuredH="80" zOrder="20" locked="false" isInGroup="-1">
       <controlProperties>
         <text>F%E5%20en%20kostnadsfri%20analys%20av%20din%20verksamhet.</text>
       </controlProperties>
@@ -138,7 +138,7 @@
         </control>
       </groupChildrenDescriptors>
     </control>
-    <control controlID="53" controlTypeID="com.balsamiq.mockups::Paragraph" x="998" y="776" w="200" h="57" measuredW="200" measuredH="80" zOrder="29" locked="false" isInGroup="-1">
+    <control controlID="53" controlTypeID="com.balsamiq.mockups::Paragraph" x="998" y="776" w="200" h="57" measuredW="275" measuredH="80" zOrder="29" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Aff%E4rsplaner%0AKalkyler%0AISO-dokument</text>
       </controlProperties>
@@ -146,6 +146,18 @@
     <control controlID="54" controlTypeID="com.balsamiq.mockups::Label" x="998" y="833" w="-1" h="-1" measuredW="28" measuredH="21" zOrder="30" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Fler...</text>
+      </controlProperties>
+    </control>
+    <control controlID="55" controlTypeID="com.balsamiq.mockups::Canvas" x="1446" y="993" w="379" h="658" measuredW="100" measuredH="70" zOrder="31" locked="false" isInGroup="-1"/>
+    <control controlID="56" controlTypeID="com.balsamiq.mockups::SubTitle" x="1541" y="1009" w="169" h="-1" measuredW="206" measuredH="27" zOrder="32" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>left</align>
+        <text>Kompetenser%20finns</text>
+      </controlProperties>
+    </control>
+    <control controlID="57" controlTypeID="com.balsamiq.mockups::List" x="1461" y="1051" w="328" h="568" measuredW="100" measuredH="126" zOrder="33" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
       </controlProperties>
     </control>
   </controls>

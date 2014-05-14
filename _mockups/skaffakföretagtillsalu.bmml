@@ -1,0 +1,79 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1840" measuredH="1416" mockupW="1800" mockupH="1382">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="40" y="34" w="1800" h="1382" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Oppstore%0Ahttp%3A//oppstore.se</text>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Canvas" x="40" y="105" w="1800" h="70" measuredW="100" measuredH="70" zOrder="1" locked="false" isInGroup="-1"/>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Title" x="55" y="119" w="-1" h="-1" measuredW="171" measuredH="43" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Oppstore</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::TabBar" x="1463" y="148" w="327" h="27" measuredW="317" measuredH="100" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <selectedIndex>0</selectedIndex>
+        <size>14</size>
+        <text>Utveckla%2C%20Avveckla%2C%20F%F6rv%E4rva%2C%20F%F6rvalta</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Canvas" x="40" y="171" w="1800" h="39" measuredW="100" measuredH="70" zOrder="4" locked="false" isInGroup="-1"/>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::LinkBar" x="695" y="181" w="-1" h="-1" measuredW="331" measuredH="19" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>F%E4rdiga%20aff%E4rsdokument%2C%20L%E4gg%20upp%20jobb%2C%20S%F6k%20kapital</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::Title" x="78" y="299" w="-1" h="-1" measuredW="358" measuredH="43" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>S%F6k%20f%F6retag%20till%20salu</text>
+      </controlProperties>
+    </control>
+    <control controlID="51" controlTypeID="com.balsamiq.mockups::CheckBox" x="78" y="357" w="-1" h="-1" measuredW="301" measuredH="22" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>13576743</color>
+        <text>Vill%20du%20vara%20anonym%20%28Visas%20endast%20f%F6r%20Premium%29</text>
+      </controlProperties>
+    </control>
+    <control controlID="52" controlTypeID="com.balsamiq.mockups::DataGrid" x="78" y="657" w="1076" h="215" measuredW="340" measuredH="195" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Name%5Cr%28job%20title%29%20%5E%2C%20Age%20%5Ev%2C%20Nickname%2C%20Employee%20v%0AGiacomo%20Guilizzoni%5CrFounder%20%26%20CEO%2C%2037%2C%20Peldi%2C%20%28o%29%0AMarco%20Botton%5CrTuttofare%2C%2034%2C%20%2C%20%5Bx%5D%0AMariah%20Maclachlan%5CrBetter%20Half%2C%2037%2C%20Patata%2C%20%5B-%5D%0AValerie%20Liberty%5CrHead%20Chef%2C%20%3A%29%2C%20Val%2C%20%5Bx%5D%0AGuido%20Jack%20Guilizzoni%2C%206%2C%20The%20Guids%2C%20%5B%5D%0A%7B65L%2C%200R%2C%2035%2C%200C%7D</text>
+      </controlProperties>
+    </control>
+    <control controlID="53" controlTypeID="com.balsamiq.mockups::FieldSet" x="78" y="409" w="1076" h="223" measuredW="200" measuredH="170" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>S%F6kkriterier</text>
+      </controlProperties>
+    </control>
+    <control controlID="54" controlTypeID="com.balsamiq.mockups::ComboBox" x="248" y="522" w="-1" h="-1" measuredW="80" measuredH="24" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Geografi</text>
+      </controlProperties>
+    </control>
+    <control controlID="55" controlTypeID="com.balsamiq.mockups::ComboBox" x="248" y="469" w="-1" h="-1" measuredW="70" measuredH="24" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Branch</text>
+      </controlProperties>
+    </control>
+    <control controlID="56" controlTypeID="com.balsamiq.mockups::Button" x="1081" y="584" w="-1" h="-1" measuredW="46" measuredH="27" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>S%F6k</text>
+      </controlProperties>
+    </control>
+    <control controlID="57" controlTypeID="com.balsamiq.mockups::Arrow" x="1220" y="729" w="-1" h="-1" measuredW="150" measuredH="100" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Ytterliggare%20information%20rullas%20ner%20n%F6r%20man%20trycker</text>
+      </controlProperties>
+    </control>
+    <control controlID="58" controlTypeID="com.balsamiq.mockups::Label" x="107" y="471" w="-1" h="-1" measuredW="66" measuredH="21" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>V%E4lj%20branch</text>
+      </controlProperties>
+    </control>
+    <control controlID="59" controlTypeID="com.balsamiq.mockups::Label" x="107" y="524" w="-1" h="-1" measuredW="56" measuredH="21" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>V%E4lj%20plats</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
