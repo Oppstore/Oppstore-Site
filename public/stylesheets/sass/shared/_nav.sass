@@ -217,7 +217,7 @@ header.navigation
     input[type=search]
       +appearance(none)
       width: 100%
-      padding: .5em .8em
+      padding: .4em .8em
       font-size: .9em
       font-style: italic
       margin: 0
@@ -225,8 +225,8 @@ header.navigation
 
     button[type=submit]
       position: absolute
-      top: 0.3em
-      bottom: 0.3em
+      top: 0.2em
+      bottom: 0.2em
       right: 0
       background-color: transparent
       outline: none
@@ -304,6 +304,10 @@ header.mobile
       +position(absolute, auto 1em auto auto)
       content: '\25BE'
       color: $navigation-color
+
+    &:hover
+      ul.submenu
+        display: block
 
   .search-bar
     position: relative

@@ -5,6 +5,7 @@ $profile-container-offer-color: #EDEFF1
 
 .container-button
   +span-columns(12)
+  text-align: center
 
 .profile-button
   color: $profile-button-color
@@ -25,7 +26,7 @@ $profile-container-offer-color: #EDEFF1
 .container-information
   +span-columns(12)
 
-.container-offer
+.container-offer, .container-goal
   +span-columns(12)
   background-color: $profile-container-offer-color
   padding: 1em
@@ -57,3 +58,13 @@ $profile-container-offer-color: #EDEFF1
 
   +media($medium-screen)
     float: right
+
+.maingoal
+  font-weight: 700
+
+.subgoal
+  font-weight: 400
+  padding-left: 1em
+
+.completed
+  color: $green
