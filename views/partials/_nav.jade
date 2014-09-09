@@ -1,0 +1,98 @@
+header.navigation.mobile
+  .navigation-wrapper
+    a.logo(href='/')
+      img(src='../public/images/oppstore_logo.svg', alt='')
+    a#js-mobile-menu.navigation-menu-button(href='') Meny
+    .nav
+      ul#navigation-menu
+        .search-bar
+          .search-and-submit
+            input(type='search', placeholder='Sök')
+            button(type='submit')
+              img(src='https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon-black.png', alt='')
+        li.mobile-nav-link.develop.more
+          a.more(href='develop.html') Utveckla
+          ul.submenu
+            li
+              a(href='#') Färdiga affärsdokument
+            li
+              a(href='#') Sök kapital
+            li
+              a(href='#') Sök partnerföretag
+        li.mobile-nav-link.liquidate.more
+          a(href='#') Avveckla
+          ul.submenu
+            li
+              a(href='#') Färdiga affärsdokument
+            li
+              a(href='#') Sälj &amp; likvidera företag
+            li
+              a(href='#') Sälj inventarier 
+        li.mobile-nav-link.acquire.more
+          a(href='#') Förvärva
+          ul.submenu
+            li
+              a(href='#') Färdiga affärsdokument
+            li
+              a(href='#') Hitta företag till salu
+            li
+              a(href='#') Hitta inventarie till salu
+        li.mobile-nav-link.administer.more
+          a(href='#') Förvalta
+          ul.submenu
+            li
+              a(href='#') Färdiga affärsdokument
+            li
+              a(href='#') Konsulttjänster
+        li.mobile-nav-link
+          a.user(href='profile.html') Logga in
+
+  //- .tool-menu
+  //-   ul
+  //-     li
+  //-       a(href='#') Steg 1
+  //-     li
+  //-       a(href='#') Steg 2
+  //-     li.active-nav-item
+  //-       a(href='#') Steg 3
+
+header.navigation.desktop
+  .navigation-wrapper
+    a.logo(href='/')
+      img(src='../public/images/oppstore_logo.svg', alt='')
+    .nav
+      .search-bar
+        .search-and-submit
+          input(type='search', placeholder='Sök')
+          button(type='submit')
+            img(src='https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon-black.png', alt='')
+      ul#navigation-menu
+        li.desktop-nav-link.develop
+          a(href='develop.html') Utveckla
+        li.desktop-nav-link.liquidate
+          a(href='#') Avveckla
+        li.desktop-nav-link.acquire
+          a(href='#') Förvärva
+        li.desktop-nav-link.administer
+          a(href='#') Förvalta
+
+      a.user(href='profile.html')
+        img(src='../public/images/user.png')
+
+  .desktop-sub-menu
+    ul
+      li
+        a(href='#') Färdiga affärsdokument
+      li
+        a(href='#') Sök kapital
+      li
+        a(href='#') Sök partnerföretag
+
+  //- .tool-menu
+  //-   ul
+  //-     li
+  //-       a(href='#') Steg 1
+  //-     li
+  //-       a(href='#') Steg 2
+  //-     li.active-nav-item
+  //-       a(href='#') Steg 3

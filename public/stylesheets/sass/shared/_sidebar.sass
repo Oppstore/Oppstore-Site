@@ -1,0 +1,25 @@
+.sidebar
+  +span-columns(12)
+
+  +media($large-screen)
+    +span-columns(3)
+
+.content-sidebar
+  +span-columns(12)
+
+  +media($medium-screen)
+    +span-columns(6)
+
+  +media($large-screen)
+    +fill-parent()
+
+  padding: 1em
+  background-color: $primary-background-color
+  margin-bottom: 1em
+
+.list-sidebar
+  margin-top: 0.5em
+  margin-bottom: 1em
+
+  li
+    margin-bottom: 0.25em

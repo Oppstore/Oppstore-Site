@@ -1,0 +1,16 @@
+$item-border-color: #E3E3E3
+
+.container-grid
+  +span-columns(12)
+
+.item-grid-half
+  +span-columns(12)
+
+  +media($large-screen)
+    +span-columns(6)
+
+  border: 1px solid $item-border-color
+  padding: 1em
+
+  header
+    +span-columns(12)

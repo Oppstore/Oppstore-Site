@@ -1,0 +1,59 @@
+$profile-button-border-size: 1px
+$profile-button-padding: 3em
+$profile-button-color: #000000
+$profile-container-offer-color: #EDEFF1
+
+.container-button
+  +span-columns(12)
+
+.profile-button
+  color: $profile-button-color
+  background-color: transparent
+  border-radius: 0
+  border-bottom: $profile-button-border-size solid black
+  padding-left: $profile-button-padding
+  padding-right: $profile-button-padding
+  margin-bottom: 1.5em
+
+  &:hover
+    border-bottom-width: $profile-button-border-size * 3
+    background-color: transparent
+
+.is-active
+  border-bottom-width: $profile-button-border-size * 3
+
+.container-information
+  +span-columns(12)
+
+.container-offer
+  +span-columns(12)
+  background-color: $profile-container-offer-color
+  padding: 1em
+  margin-bottom: 1em
+
+.message-offer
+  +span-columns(12)
+
+  +media($medium-screen)
+    +span-columns(9)
+
+.information-offer
+  +span-columns(12)
+
+  +media($medium-screen)
+    +span-columns(3)
+
+.information-column
+  +span-columns(12)
+
+  +media($medium-screen)
+    +span-columns(4)
+
+.button-reupload-job
+  margin-top: 1em
+
+.button-discuss
+  float: left
+
+  +media($medium-screen)
+    float: right

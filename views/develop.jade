@@ -1,0 +1,58 @@
+extends templates/layout
+block vars
+  - var bodyClass = 'develop'
+block content
+  include partials/_adbanner
+  include partials/_nav
+  section.container
+    .wrapper
+      .paragraph-info
+        h1 Utveckla ditt företag
+        p.
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        p.
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      .container-shortcut
+        .row-shortcut
+          a(href='#').shortcut
+            .icon
+            | Färdiga dokument
+          a(href='#').shortcut
+            .icon
+            | Sök kapital
+          a(href='#').shortcut
+            .icon
+            | Sök partnerföretag
+
+      .sidebar
+        .content-sidebar
+          h5 Företag till salu
+          ul.list-sidebar
+            li
+              a(href='#') Företag 1
+            li
+              a(href='#') Företag 2
+            li
+              a(href='#') Företag 3
+          a(href='#').button.right Mer
+        .content-sidebar
+          h5 Kompetenser finns
+          ul.list-sidebar
+            li
+              a(href='#') Kompetens 1
+            li
+              a(href='#') Kompetens 2
+            li
+              a(href='#') Kompetens 3
+          a(href='#').button.right Mer
+        .content-sidebar
+          h5 Inventarie finns
+          ul.list-sidebar
+            li
+              a(href='#') Inventarie 1
+            li
+              a(href='#') Inventarie 2
+            li
+              a(href='#') Inventarie 3
+          a(href='#').button.right Mer
+  include partials/_footer

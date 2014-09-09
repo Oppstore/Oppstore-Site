@@ -1,0 +1,268 @@
+extends templates/layout
+block vars
+  - var bodyClass = 'profile'
+block content
+  include partials/_nav
+  section.container
+    .hero
+      .inner-hero
+        .copy-hero
+            h1.header-hero Min sida
+    .wrapper
+      .div
+        .div
+          .container-button
+            ul.horizontal-list.accordion-tabs
+              li.tab-header-and-content
+                a(href='#').button.profile-button.is-active.tab-link
+                  | Jobbförfrågningar
+                .container-grid.tab-content
+                  .item-grid-half
+                    header
+                      h4 Konsulttjänst: Nytt IT-system för hantering av kunder
+                    .container-information
+                      .row
+                        .information-column
+                          h5.header Information
+                          ul
+                            li Teknik och IT-system
+                            li Offtime
+                            li Närstående
+                      .row
+                        h5.header Intressenter
+                        .container-offer
+                          .row
+                            h6 Ragnars IT-konsult
+                            .message-offer
+                              p.
+                                "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                            .information-offer
+                              ul
+                                li Pris: 700 kr/h
+                                li Deadline: 2014-06-30
+                          .row
+                            a(href='#').button.button-success Acceptera
+                            a(href='#').button.button-alert Neka
+                            a(href='#').button.button-discuss Diskutera
+                        .container-offer
+                          .row
+                            h6 Johannas IT
+                            .message-offer
+                              p.
+                                "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                            .information-offer
+                              ul
+                                li Pris: 900 kr/h
+                                li Deadline: 2014-06-25
+                          .row
+                            a.button.button-success(href='#') Acceptera
+                            a.button.button-alert(href='#') Neka
+                            a.button.button-discuss(href='#') Diskutera
+                      .row
+                        h5.header Bifogade filer
+                        table
+                          theader
+                            th Namn
+                            th Storlek
+                            th
+                          tbody
+                            tr
+                              td 
+                                a(href='#') IT-system.pdf
+                              td 3.4mb
+                              td.remove-tablecell
+                                a(href='#').button.button-alert Ta bort
+                            tr
+                              td 
+                                a(href='#') Önskemål.pdf
+                              td 2.4mb
+                              td.remove-tablecell
+                                a(href='#').button.button-alert Ta bort
+                        a(href='#').button Ladda upp fil
+                  .item-grid-half
+                    header
+                      h4 Förvärv: Försäljning av Gunnars Metall
+                    .container-information
+                      .row
+                        h5.header Information
+                        ul
+                          li Metallarbete
+                          li Småland
+                          li Omsättning: 10 000 000kr
+                          li Resultat f. skatt: 7 000 000kr
+                      .row
+                        h5.header Intressenter
+                        .container-offer
+                          .row
+                            h6 IF Metall
+                            p.
+                              "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                           .row
+                            a(href='#').button.right Diskutera
+                        .container-offer
+                          .row
+                            h6 Anonym Intressent
+                        .container-offer
+                          .row
+                            h6 SKB Hjullager
+                            p.
+                              "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                           .row
+                            a(href='#').button.right Diskutera
+              li.tab-header-and-content
+                a(href='#').button.profile-button.tab-link
+                  | Pågående jobb
+                .container-grid.tab-content
+                  .item-grid-half
+                    header
+                      h4 Konsulttjänst: Nytt bokningssystem
+                    .container-information
+                      .row
+                        .information-column
+                          h5.header Information
+                          ul
+                            li Teknik och IT-system
+                            li Offtime
+                            li Närstående
+                        .information-column
+                          h5.header Arbetstagare
+                          ul
+                            li Gunnars IT
+                            li 700/h
+                            li Deadline 2014-02-12
+                        .information-column
+                          h5.header Kontakt
+                          ul
+                            li 0709829251
+                            li 
+                              a(href='#') www.gunnarsit.se
+                      .row
+                        a(href='#').button.button-reupload-job Lägg upp uppdrag på Nytt
+                      .row
+                        h5.header Disskusion
+                        .container-offer
+                          .row
+                            h6 Senaste meddelande
+                            .row
+                              p.
+                                "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                          .row
+                            a(href='#').button.right Diskutera
+                      .row
+                        h5.header Bifogade filer
+                        table
+                          theader
+                            th Namn
+                            th Storlek
+                            th
+                          tbody
+                            tr
+                              td 
+                                a(href='#') Dokumentation.pdf
+                              td 3.4mb
+                              td.remove-tablecell
+                                a(href='#').button.button-alert Ta bort
+                            tr
+                              td 
+                                a(href='#') Bokningssystem.pdf
+                              td 2.4mb
+                              td.remove-tablecell
+                                a(href='#').button.button-alert Ta bort
+                        a(href='#').button Ladda upp fil
+              li.tab-header-and-content
+                a(href='#').button.profile-button.tab-link
+                  | Avklarade jobb
+                .container-grid.tab-content
+                  .item-grid-half
+                    header
+                      h4 Konsulttjänst: Nytt IT-system för hantering av kunder
+                    .container-information
+                      .row
+                        h5.header Information
+                        ul
+                          li Teknik och IT-system
+                          li Offtime
+                          li Närstående
+                      .row
+                        h5.header Intressenter
+                        .container-offer
+                          .row
+                            h6 Ragnars IT-konsult
+                            .message-offer
+                              p.
+                                "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                            .information-offer
+                              ul
+                                li Pris: 700 kr/h
+                                li Deadline: 2014-06-30
+                          .row
+                            a(href='#').button.button-success Acceptera
+                            a(href='#').button.button-alert Neka
+                            a(href='#').button.right Diskutera
+                        .container-offer
+                          .row
+                            h6 Johannas IT
+                            .message-offer
+                              p.
+                                "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                            .information-offer
+                              ul
+                                li Pris: 900 kr/h
+                                li Deadline: 2014-06-25
+                          .row
+                            a.button.button-success(href='#') Acceptera
+                            a.button.button-alert(href='#') Neka
+                            a.button.right(href='#') Diskutera
+                      .row
+                        h5.header Bifogade filer
+                        table
+                          theader
+                            th Namn
+                            th Storlek
+                            th
+                          tbody
+                            tr
+                              td 
+                                a(href='#') IT-system.pdf
+                              td 3.4mb
+                              td.remove-tablecell
+                                a(href='#').button.button-alert Ta bort
+                            tr
+                              td 
+                                a(href='#') Önskemål.pdf
+                              td 2.4mb
+                              td.remove-tablecell
+                                a(href='#').button.button-alert Ta bort
+                        a(href='#').button Ladda upp fil
+                  .item-grid-half
+                    header
+                      h4 Förvärv: Försäljning av Gunnars Metall
+                    .container-information
+                      .row
+                        h5.header Information
+                        ul
+                          li Metallarbete
+                          li Småland
+                          li Omsättning: 10 000 000kr
+                          li Resultat f. skatt: 7 000 000kr
+                      .row
+                        h5.header Intressenter
+                        .container-offer
+                          .row
+                            h6 IF Metall
+                            p.
+                              "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                           .row
+                            a(href='#').button.right Diskutera
+                        .container-offer
+                          .row
+                            h6 Anonym Intressent
+                        .container-offer
+                          .row
+                            h6 SKB Hjullager
+                            p.
+                              "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                           .row
+                            a(href='#').button.right Diskutera
+
+  include partials/_footer

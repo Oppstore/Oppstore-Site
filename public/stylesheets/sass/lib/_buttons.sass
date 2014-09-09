@@ -1,0 +1,33 @@
+$button-padding: 1em
+$button-color: #55B2D4
+$button-primary-font-color: #FFFFFF
+$button-secondary-font-color: #000000
+$button-alert-color: #F1530D
+$button-success-color: #39A362
+
+.button
+  display: inline-block
+  background-color: $button-color
+  color: $button-primary-font-color
+  padding: $button-padding $button-padding $button-padding $button-padding
+  margin: $button-padding / 2 0 $button-padding / 2 0
+  line-height: $button-padding / 2
+
+  &:hover
+    color: darken($button-primary-font-color, 20)
+    +transition(color 0.25s linear)
+    background-color: lighten($button-color, 10)
+    +transition(background-color 0.25s linear)
+    text-decoration: none
+
+.button-alert
+  background-color: $button-alert-color
+
+  &:hover
+    background-color: lighten($button-alert-color, 10)
+
+.button-success
+  background-color: $button-success-color
+
+  &:hover
+    background-color: lighten($button-success-color, 10)

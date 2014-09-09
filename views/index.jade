@@ -1,0 +1,82 @@
+extends templates/layout
+block vars
+  - var bodyClass = 'index'
+block content
+  include partials/_adbanner
+  include partials/_nav
+  section.container
+    .hero
+      .inner-hero
+        .copy-hero
+            h1.header-hero Short description of Product
+            p.tagline-hero
+              | A few reasons why this product is worth using, who it's for and why they need it.
+    .wrapper
+      .container-news
+        .article-news
+          header
+            h2 Ikea-pengar till diktaturen
+            span.date 2014-05-12 23:12
+          article
+            p.tagline Tillgångar från Ikea ska under 1980-talet ha hamnat hos den kommunistiska diktaturen i Rumänien, avslöjar The Guardian. Ikea ska ha betalat för höga belopp, där överskottet landat hos Ceausescus hemliga polis.
+            p.
+              Enligt The Guardian visar dokument, som fram tills nyligen varit hemliga, att Ikea gått med på att betala ett tillägg för produkter som köptes in från ett rumänskt möbelföretag. De extra pengarna ska sedan ha hamnat på ett konto kontrollerat av Securitate — den hemliga polis som lydde direkt under diktatorn Nicolae Ceausescu. <br> Enligt The Guardian ska Ikea-betalningarna dit ha utgjorts av sexsiffriga belopp — i ett dokument daterat 1986 nämns ett belopp på 163 005 kronor. <br> "Vi har tittat igenom våra egna arkiv och dokument och inte hittat något som stödjer eller ger belägg för det", säger Josefin Thorell, talesperson för Ikea-gruppen till TT, apropå uppgifterna. <br> Men Ikea har nu sjösatt en utredning och bland annat ska Securitates arkiv gås igenom.
+        .article-news
+          header
+            h2 Nytt svenskt solrekord
+            span.date 2014-05-12 09:34
+          article
+            p.tagline En svensk forskargrupp har lyckats öka verkningsgraden på andra generationens solceller till 21 procent. Det innebär nytt världsrekord.
+            p.
+              Bakom framsteget står bolaget Solibro i Uppsala, som arbetar med så kallade tunnfilmssolceller. Tunnfilmstekniken kräver mindre material och energi vid tillverkningen än den vanligaste sortens solpaneler, som framställs av kisel. <br> “Vi har experimenterat med sammansättningen av de olika metallerna som solcellen består av och dessutom dopat materialet genom att tillföra andra ämnen. Det finns en viss ideal sammansättning som ger maximal uppfångning av solens fotoner. Nu har vi kommit närmare den”, säger Mats Ljunggren, vd på Solibros forskningsbolag. <br> Att verkningsgraden stiger innebär att en högre andel av den solenergi som träffar panelerna kan omvandlas till elektricitet. <br> Solibro ägs av det kinesiska energibolaget Hanergy men företagets forskning och utveckling finns i Sverige. Hanergy bygger nu en fabrik i Kina för att kunna öka produktionskapacitet kraftigt, vilket också sänker priset per watt på solpanelerna...
+
+      .container-shortcut
+        .row
+          a(href='#').shortcut
+            .icon
+            | Sök riskkapital
+          a(href='#').shortcut
+            .icon
+            | Sälj företag
+          a(href='#').shortcut
+            .icon
+            | Köp Företag
+        .row
+          a(href='#').shortcut
+            .icon
+            | Konsulttjänster
+          a(href='#').shortcut
+            .icon
+            | Köp inventarie
+          a(href='#').shortcut
+            .icon
+            | Färdiga affärsdokument
+
+      .sidebar
+        .content-sidebar
+          h5 Senaste nyheter
+          ul.list-sidebar
+            li 
+              a(href='#') Ikea-pengar till diktaturen
+            li 
+              a(href='#') Nytt svenskt solrekord
+            li 
+              a(href='#') Oväder i Malmö
+            li 
+              a(href='#') Flygplan nerskjutet över Ukraina
+            li 
+              a(href='#') Jordens årliga resurser är förbrukade
+        //- .content-sidebar
+        //-   h5 Lokal lunchlista
+        //-   ul.list-sidebar
+        //-     li Raggmunk med fläsk - 69kr
+        //-     li Potatis med Köttbullar - 69kr
+        //-     li Dagens fisk - 99kr
+        //-     li Dagens vegetariska - 79kr
+        //-     li Buffé - 119kr
+        //-   a(href='#') Kalles Husmanskost, Borås
+
+        .content-sidebar.ad-sidebar
+          h5 Reklamannons
+  include partials/_footer
+

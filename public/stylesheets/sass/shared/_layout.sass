@@ -1,0 +1,24 @@
+.wrapper
+  +outer-container
+  padding-top: 2em
+  padding-left: 2em
+  padding-right: 2em
+
+  +media($large-screen)
+    padding-left: 0
+    padding-right: 0
+
+.paragraph-info
+  +span-columns(12)
+
+  +media($medium-screen)
+    +span-columns(9)
+
+  +media($large-screen)
+    +span-columns(7)
+
+.row
+  +row
+
+.right
+  float: right

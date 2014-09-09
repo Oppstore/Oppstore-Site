@@ -1,0 +1,26 @@
+$footer-color: #4D4D4D
+$footer-link-color: #FFF
+
+footer
+  margin-top: 5em
+  background-color: $footer-color
+
+  a
+    color: $footer-link-color
+
+  .main-page
+    font-weight: 700
+
+.footer-menu
+  +outer-container
+
+  .container-menu
+    +row
+    padding-top: 2.5em
+    padding-bottom: 3.5em
+
+  ul
+    +span-columns(12)
+
+    +media($large-screen)
+      +span-columns(3)

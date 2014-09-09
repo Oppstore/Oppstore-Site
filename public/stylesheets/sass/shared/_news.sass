@@ -1,0 +1,19 @@
+.container-news
+  +span-columns(12)
+  
+  +media($medium-screen)
+    +span-columns(9)
+
+  +media($large-screen)
+    +span-columns(7)
+  
+.article-news
+  border: 1px solid $primary-background-color
+  margin-bottom: 1em
+
+  header
+    background-color: $primary-background-color
+    padding: 1em
+
+  article
+    padding: 1em

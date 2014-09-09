@@ -1,0 +1,5 @@
+public/stylesheets/sass/.sass-cache/*
+*.DS_Store
+*.codekit
+*.html
+*.css
