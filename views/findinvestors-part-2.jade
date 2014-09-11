@@ -1,0 +1,48 @@
+extends templates/layout
+block vars
+  - var bodyClass = 'develop'
+block content
+  include partials/_adbanner
+  include partials/_nav
+  section.container
+    .wrapper
+      .header-tutorial
+        h1 Att bygga en affärsplan
+      .paragraph-tutorial
+        p.
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        p.
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      .container-tool
+        form
+          fieldset
+            h5 Om företaget
+            .container-input
+              label(for='select_element1') Bransch:
+                select(name='select_element1')
+                  option(value="1") Bransch 1
+                  option(value="2") Bransch 2
+                  option(value="3") Bransch 3
+              label(for='select_element2') Kommun:
+                select(name='select_element2')
+                  option(value="1") Kommun 1
+                  option(value="2") Kommun 2
+                  option(value="3") Kommun 3
+              label(for='text_area1') Företagsbeskrivning:
+                textarea#text_area1
+              label(for='text_field1') Namn:
+                input#text_field1(type='text')
+              label(for='text_field2') Organisationsnummer:
+                input#text_field2(type='text')
+          fieldset
+            span
+              h5 Om investeringen
+              .container-input
+                label(for='text_area2') Beskriv investeringen:
+                  textarea#text_area2
+                label(for='text_field3') Beräknad kostnad:
+                  input#text_field3(type='text')
+  section.tool-nav
+    a(href='findinvestors.html').button.button-tool-nav Föregående steg
+    a(href='findinvestors-part-3.html').button.button-tool-nav.next Nästa steg
+  include partials/_footer

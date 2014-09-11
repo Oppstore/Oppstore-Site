@@ -1,0 +1,81 @@
+$tool-nav-button-color: $light-gray
+$tool-nav-next-button-color: $button-success-color
+$container-financial-year-color: #F0F0F0
+$container-summary-border-color: #DDD
+
+.tool-nav
+  +outer-container
+  padding-top: 2em
+  padding-left: 2em
+  padding-right: 2em
+
+  +media($large-screen)
+    padding-left: 0
+    padding-right: 0
+
+.button-tool-nav
+  margin: 0
+  background-color: $tool-nav-button-color
+
+  &:hover
+    background-color: lighten($tool-nav-button-color, 5)
+
+.button-tool-nav.next
+  float: right
+  background-color: $tool-nav-next-button-color
+
+  &:hover
+    background-color: lighten($tool-nav-next-button-color, 5)
+
+.header-tutorial
+  +fill-parent
+
+.paragraph-tutorial
+  +span-columns(6)
+
+.container-tool
+  +span-columns(6)
+
+.container-table-tool
+  +fill-parent
+
+.container-input
+  margin-top: 0.5em
+
+.fieldset-cash-forecast
+  padding: 0
+
+.header-cash-forecast
+  padding-top: 1.5em
+  padding-left: 1.5em
+
+.button-generate-cash-forecast
+  float: right
+  margin-bottom: 1.5em
+  margin-right: 1.5em
+
+.revenue, .profit, .employees
+  +span-columns(4)
+
+.container-financial-year
+  +row
+  padding: 1.5em
+  
+  &:nth-child(2n+2)
+    background-color: $container-financial-year-color
+
+.container-summary
+  +clearfix
+  border: 1px solid $container-summary-border-color
+  padding: 1.5em
+  margin-bottom: 2em
+
+.container-summary-businessplan
+  +span-columns(4)
+
+.container-summary-cash-forecast
+  +span-columns(8)
+
+.list-summary
+  li
+    margin-bottom: 0.5em

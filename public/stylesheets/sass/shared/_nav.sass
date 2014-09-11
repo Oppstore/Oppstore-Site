@@ -1,7 +1,9 @@
 $navigation-padding: 1em
 $navigation-background: #fff
-$navigation-color: darken(#FFF, 10)
-$navigation-color-hover: lighten($navigation-color, 10)
+$navigation-color: darken(#FFF, 5)
+$navigation-color-hover: lighten($navigation-color, 5)
+$navigation-active-color: #FFF
+$navigation-active-font-weight: 700
 $navigation-height: 60px
 $navigation-nav-button-border: 1px solid #FFF
 $navigation-submenu-padding: 1em
@@ -139,7 +141,8 @@ header.navigation
       background-color: $blue
 
   .active-nav-item a
-    color: #FFF
+    color: $navigation-active-color
+    font-weight: $navigation-active-font-weight
     z-index: $top-nav-button
 
   a.user

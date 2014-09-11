@@ -1,0 +1,26 @@
+$fieldset-background-color: #F7F7F7
+$select-background-color: #FCFCFC
+$label-font-weight: 400
+$forms-border-radius: 0
+$forms-border-color: #DDD
+
+input[type="text"], textarea, select
+  border-radius: $forms-border-radius
+  border-color: $forms-border-color
+
+fieldset
+  background-color: $fieldset-background-color
+  margin-bottom: 1em
+
+label
+  font-weight: $label-font-weight
+
+select
+  +appearance(none)
+  background-color: $select-background-color
+  padding: 0.5em 1em 0.5em 1em
+  width: 100%
+  background-image: url('../icons/play.svg')
+  background-repeat: no-repeat
+  background-size: 10px
+  background-position: 97% 50%

@@ -15,9 +15,9 @@ $button-success-color: #39A362
 
   &:hover
     color: darken($button-primary-font-color, 20)
-    +transition(color 0.25s linear)
+    +transition(color 0.1 linear)
     background-color: lighten($button-color, 10)
-    +transition(background-color 0.25s linear)
+    +transition(background-color 0.1 linear)
     text-decoration: none
 
 .button-alert
@@ -31,3 +31,9 @@ $button-success-color: #39A362
 
   &:hover
     background-color: lighten($button-success-color, 10)
+
+button[disasbled]
+  opacity: 0.5
+
+  &:hover
+    background-color: initial

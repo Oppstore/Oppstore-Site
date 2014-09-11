@@ -14,7 +14,7 @@ $(document).ready(function() {
   });
 });
 
-/* *** Navigation End *** */
+/* *** Navigation end *** */
 
 /* *** Accordion *** */
 
@@ -38,4 +38,42 @@ $(document).ready(function () {
   });
 });
 
-/* *** Accordion *** */
+/* *** Accordion end *** */
+
+/* *** Cash forecast chart *** */
+
+var cashForecastData = {
+  labels : ["År 1","År 2","År 3"],
+  datasets : [
+    {
+      label: "Revenue",
+      fillColor : "rgba(172,194,132,0.4)",
+      strokeColor : "#ACC26D",
+      pointColor : "#ACC26D",
+      pointStrokeColor : "#9DB86D",
+      pointHighlightFill : "#FFF",
+      data : [3234890,4589234,6348849]
+    },
+    {
+      label: "Profit",
+      fillColor : "rgba(194,132,172,0.4)",
+      strokeColor : "#C26DAC",
+      pointColor : "#C26DAC",
+      pointStrokeColor : "#B86D9D",
+      pointHighlightFill : "#FFF",
+      data : [944126,1523894,1254932]
+    }
+  ]
+};
+
+var cashForecastOptions = {
+  responsive : true,
+  maintainAspectRatio : true,
+  pointHitDetectionRadius : 20,
+  legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].lineColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>"
+};
+
+var cashForecast = $("#cashForecast").get(0).getContext("2d");
+new Chart(cashForecast).Line(cashForecastData, cashForecastOptions);
+
+/* *** Cash forecast chart end *** */

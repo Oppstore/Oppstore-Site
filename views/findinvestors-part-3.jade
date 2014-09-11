@@ -1,0 +1,84 @@
+extends templates/layout
+block vars
+  - var bodyClass = 'develop'
+block content
+  include partials/_adbanner
+  include partials/_nav
+  section.container
+    .wrapper
+      .header-tutorial
+        h1 Att bygga en likviditetsbudget
+      .row
+        .paragraph-tutorial
+          p.
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          p.
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      .row
+        .container-table-tool
+          form
+            fieldset.fieldset-cash-forecast
+              .header-cash-forecast
+                h5 Om företaget
+              .container-input
+                .container-financial-year
+                  .revenue
+                    label(for='text_field1') Omsättning år 1:
+                      input#text_field1(type='text')
+                  .profit
+                    label(for='text_field2') Resultat f. skatt år 1:
+                      input#text_field2(type='text')
+                  .employees
+                    label(for='text_field3') Antal anställda år 1:
+                      input#text_field3(type='text')
+                .container-financial-year
+                  .revenue
+                    label(for='text_field4') Omsättning år 2:
+                      input#text_field4(type='text')
+                  .profit
+                    label(for='text_field5') Resultat f. skatt år 2:
+                      input#text_field5(type='text')
+                  .employees
+                    label(for='text_field6') Antal anställda år 2:
+                      input#text_field6(type='text')
+                .container-financial-year
+                  .revenue
+                    label(for='text_field7') Omsättning år 3:
+                      input#text_field7(type='text')
+                  .profit
+                    label(for='text_field8') Resultat f. skatt år 3:
+                      input#text_field8(type='text')
+                  .employees
+                    label(for='text_field9') Antal anställda år 3:
+                      input#text_field9(type='text')
+              .row
+                a(href='#').button.button-generate-cash-forecast.button-success Generera budget
+      .row
+        table
+          tr
+            th
+            th Omsättning
+            th Resultat f. skatt
+            th Antal anställda
+          tr
+            th År 1
+            td 3 234 890
+            td 944 126
+            td 3
+          tr
+            th År 2
+            td 4 589 234
+            td 1 523 894
+            td 4
+          tr
+            th År 3
+            td 6 348 849
+            td 1 254 932
+            td 6
+      .row
+        .container-canvas
+          canvas#cashForecast
+  section.tool-nav
+    a(href='findinvestors-part-2.html').button.button-tool-nav Föregående steg
+    a(href='findinvestors-part-4.html').button.button-tool-nav.next Nästa steg
+  include partials/_footer
