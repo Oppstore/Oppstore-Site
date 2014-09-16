@@ -31,10 +31,16 @@ $container-summary-border-color: #DDD
   +fill-parent
 
 .paragraph-tutorial
-  +span-columns(6)
+  +span-columns(12)
+
+  +media($large-screen)
+    +span-columns(6)
 
 .container-tool
-  +span-columns(6)
+  +span-columns(12)
+
+  +media($large-screen)
+    +span-columns(6)
 
 .container-table-tool
   +fill-parent
@@ -71,10 +77,16 @@ $container-summary-border-color: #DDD
   margin-bottom: 2em
 
 .container-summary-businessplan
-  +span-columns(4)
+  +span-columns(12)
+
+  +media($large-screen)
+    +span-columns(4)
 
 .container-summary-cash-forecast
-  +span-columns(8)
+  +span-columns(12)
+
+  +media($large-screen)
+    +span-columns(8)
 
 .list-summary
   li

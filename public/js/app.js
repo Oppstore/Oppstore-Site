@@ -16,6 +16,16 @@ $(document).ready(function() {
 
 /* *** Navigation end *** */
 
+/* *** Dropdown *** */
+
+$(document).ready(function(){
+  $(".dropdown-button").click(function(){
+    $(".menu").toggleClass("show-menu");
+  });  
+});
+
+/* *** Dropdown end *** */
+
 /* *** Accordion *** */
 
 $(document).ready(function () {

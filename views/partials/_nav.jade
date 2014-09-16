@@ -74,10 +74,17 @@ header.navigation.desktop
         li.desktop-nav-link.acquire
           a(href='#') Förvärva
         li.desktop-nav-link.administer
-          a(href='#') Förvalta
+          a(href='administer.html') Förvalta
 
-      a.user(href='profile.html')
-        img(src='../public/images/user.png')
+      .container-user
+        a.user(href='profile.html')
+          img(src='../public/images/user.png')
+        .container-profile-sub-menu
+            .dropdown-button.button-profile-sub-menu
+            ul.menu
+              li Inställningar
+              li Logga ut
+
 
   .desktop-sub-menu
     ul

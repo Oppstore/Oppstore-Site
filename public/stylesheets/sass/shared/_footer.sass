@@ -1,25 +1,47 @@
-$footer-color: #4D4D4D
-$footer-link-color: #FFF
+$footer-color: darken($primary-background-color, 5)
+$footer-link-color: $primary-font-color
+$footer-disclaimer-color: #7C7C7C
 
 footer
   background-color: $footer-color
 
+  .logo
+    display: block
+
   a
     color: $footer-link-color
+
+    &:hover
+      text-decoration: none
 
   .main-page
     font-weight: 700
 
 .footer-menu
   +outer-container
+  width: 70%
+  text-align: center
+  padding-top: 2.5em
+  padding-bottom: 3.5em
 
   .container-menu
-    +row
-    padding-top: 2.5em
-    padding-bottom: 3.5em
+    width: 100%
+    +clearfix
 
   ul
+    margin-bottom: 1em
+    text-align: center
     +span-columns(12)
 
     +media($large-screen)
+      margin-bottom: 0
+      text-align: left
       +span-columns(3)
+
+  .container-disclaimer
+    width: 100%
+    display: inline-block
+    color: $footer-disclaimer-color
+
+    +media($large-screen)
+      width: 60%

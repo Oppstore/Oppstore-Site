@@ -13,6 +13,9 @@ $sub-navigation-height: 45px
 $top-nav-button: 3
 $middle-nav-button: 2
 $bottom-nav-button: 1
+$button-profile-sub-menu-background: #FFF
+$button-profile-sub-menu-size: 25px
+$button-profile-sub-menu-drop-shadow: 0px 2px 3px 0px rgba(0,0,0,0.12)
 
 header.navigation
   background-color: $navigation-background
@@ -209,37 +212,6 @@ header.navigation
           width: $navigation-submenu-width
 
   // Elements on the far right
-  .search-bar
-    input
-      +box-sizing(border-box)
-      display: block
-
-    .search-and-submit
-      position: relative
-
-    input[type=search]
-      +appearance(none)
-      width: 100%
-      padding: .4em .8em
-      font-size: .9em
-      font-style: italic
-      margin: 0
-      border-radius: 0
-
-    button[type=submit]
-      position: absolute
-      top: 0.2em
-      bottom: 0.2em
-      right: 0
-      background-color: transparent
-      outline: none
-      padding: 5px 10px
-
-      img
-        height: 12px
-        opacity: .7
-
-
   .navigation-tools
     +clearfix
     display: block
@@ -359,3 +331,22 @@ header.desktop
     top: 10px
     right: 98px
     width: 210px
+
+.container-user
+  display: inline-block
+  position: relative
+
+.container-profile-sub-menu
+  position: absolute
+  bottom: 5px
+  left: 55px
+
+.button-profile-sub-menu
+  background-color: $button-profile-sub-menu-background
+  height: $button-profile-sub-menu-size
+  width: $button-profile-sub-menu-size
+  border-radius: $button-profile-sub-menu-size / 2
+  -webkit-box-shadow: $button-profile-sub-menu-drop-shadow
+  -moz-box-shadow: $button-profile-sub-menu-drop-shadow
+  box-shadow: $button-profile-sub-menu-drop-shadow
+  padding: 0
