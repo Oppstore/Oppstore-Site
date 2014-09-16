@@ -1,5 +1,7 @@
+$table-background: #FFF
+$table-border-color: darken($table-background, 5)
+$table-hover-color: $table-border-color
 $table-padding: 0.75em
-$table-border-color: #DDD
 
 table
 
@@ -9,3 +11,7 @@ th, td
 
 .remove-tablecell
   text-align: center
+
+.search-results
+  tr:hover > td
+    background-color: $table-hover-color

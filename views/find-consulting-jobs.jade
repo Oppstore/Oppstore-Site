@@ -1,0 +1,79 @@
+extends templates/layout
+block vars
+  - var bodyClass = 'administer'
+block content
+  include partials/_adbanner
+  include partials/_nav
+  section.container
+    .wrapper
+      .row
+        h1 Hitta konsultjobb
+      .row
+        .search-bar
+          .search-and-submit
+            input(type='search', placeholder='Sök')
+            button(type='submit')
+              img(src='https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon-black.png', alt='')
+      .row.row-search-results
+        .container-search-criterias
+          .row
+            h5 Sökkriterier
+          .row.search-criterias
+            h6 Bransch
+            ul
+              li 
+                a(href="#") Transport
+              li 
+                a(href="#") Gruvverksamhet
+              li 
+                a(href="#") IT-verksamhet
+              li 
+                a(href="#") Djurskötsel
+          .row.search-criterias
+            h6 Lokalisering
+            ul
+              li 
+                a(href="#") Lokala
+              li 
+                a(href="#") Regionala
+          .row.search-criterias
+            h6 Partner
+            ul
+              li 
+                a(href="#") EUC
+              li 
+                a(href="#") Övriga
+        .container-search-results
+          table.search-results
+            theader
+              th Konsultjobb
+              th Företag
+              th Bransch
+              th Upplagd
+            tbody
+              tr
+                td Inköp av lastbilar
+                td Jennys Åkeri
+                td Transport
+                td 2013-04-12 12:54
+              tr
+                td Inköp av gruvmaskiner
+                td Gruvgrävning International
+                td Gruvverksamhet
+                td 2013-04-12 09:54
+              tr
+                td IT-system för företag
+                td Johannes IT
+                td IT-verksamhet
+                td 2013-04-11 13:12
+              tr
+                td IT-system för transportering
+                td Gunnars Åkeri
+                td Transport
+                td 2013-04-11 11:28
+              tr
+                td HR-konsultering
+                td Animals AB
+                td Djurskötsel
+                td 2013-04-10 12:33
+  include partials/_footer
