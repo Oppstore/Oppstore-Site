@@ -1,9 +1,9 @@
-extends templates/layout
+extends ../templates/layout
 block vars
   - var bodyClass = 'develop'
 block content
-  include partials/_adbanner
-  include partials/_nav
+  include ../partials/_adbanner
+  include ../partials/_nav
   section.container
     .wrapper
       .header-tutorial
@@ -83,4 +83,4 @@ block content
   section.tool-nav
     a(href='findinvestors-part-3.html').button.button-tool-nav Föregående steg
     a(href='#').button.button-tool-nav.next Skicka
-  include partials/_footer
+  include ../partials/_footer

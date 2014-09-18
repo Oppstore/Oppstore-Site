@@ -15,3 +15,13 @@ th, td
 .search-results
   tr:hover > td
     background-color: $table-hover-color
+
+  td
+    overflow: hidden
+    text-overflow: ellipsis
+
+.upload-date
+  display: none
+
+  +media($medium-screen)
+    display: table-cell

@@ -2,12 +2,17 @@
   padding-top: 2em
 
 .container-search-criterias
-  +span-columns(3)
+  +span-columns(12)
   background-color: $primary-background-color
-  padding: 1em
+
+  +media($large-screen)
+    +span-columns(3)
 
 .search-criterias
   margin-top: 1em
 
 .container-search-results
-  +span-columns(9)
+  +span-columns(12)
+
+  +media($large-screen)
+    +span-columns(9)

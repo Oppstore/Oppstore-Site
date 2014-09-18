@@ -26,7 +26,7 @@ $(document).ready(function(){
 
 /* *** Dropdown end *** */
 
-/* *** Accordion *** */
+/* *** Accordion-tabs *** */
 
 $(document).ready(function () {
   $('.accordion-tabs').each(function(index) {
@@ -46,6 +46,17 @@ $(document).ready(function () {
       event.preventDefault();
     }
   });
+});
+
+/* *** Accordion-tabs end *** */
+
+/* *** Accordion *** */
+
+$('.js-accordion-trigger').bind('click', function(e){
+  jQuery(this).parent().find('.accordion-content').slideToggle('fast'); 
+ // apply the toggle to the ul
+  jQuery(this).parent().toggleClass('is-closed');
+  e.preventDefault();
 });
 
 /* *** Accordion end *** */
