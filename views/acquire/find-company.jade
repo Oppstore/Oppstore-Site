@@ -1,0 +1,81 @@
+extends ../templates/layout
+block vars
+  - var bodyClass = 'administer'
+block content
+  include ../partials/_adbanner
+  include ../partials/_nav
+  section.container
+    .wrapper
+      .row
+        h1 Hitta företag till salu
+      .row
+        .search-bar
+          .search-and-submit
+            input(type='search', placeholder='Sök')
+            button(type='submit')
+              img(src='https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon-black.png', alt='')
+      .row.row-search-results
+        .container-search-criterias
+          .row.accordion
+            a.js-accordion-trigger(href='javascript:void(0)')
+              h5 Sökkriterier
+            .row.accordion-content  
+              .row.search-criterias
+                h6 Bransch
+                ul
+                  li 
+                    a(href="#") Transport
+                  li 
+                    a(href="#") Gruvverksamhet
+                  li 
+                    a(href="#") IT-verksamhet
+                  li 
+                    a(href="#") Djurskötsel
+              .row.search-criterias
+                h6 Lokalisering
+                ul
+                  li 
+                    a(href="#") Lokala
+                  li 
+                    a(href="#") Regionala
+              .row.search-criterias
+                h6 Partner
+                ul
+                  li 
+                    a(href="#") EUC
+                  li 
+                    a(href="#") Övriga
+        .container-search-results
+          table.search-results
+            theader
+              th Företag
+              th Omsättning
+              th Bransch
+              th.upload-date Upplagd
+            tbody
+              tr
+                td Jennys Åkeri
+                td 100 - 199 t.kr.
+                td Transport
+                td.upload-date 2013-04-12 12:54
+              tr
+                td Gruvgrävning International
+                td 600 - 699 t.kr.
+                td Gruvverksamhet
+                td.upload-date 2013-04-12 09:54
+              tr
+                td DJohannes IT
+                td 50-99 t.kr.
+                td IT-verksamhet
+                td.upload-date 2013-04-11 13:12
+              tr
+                td Gunnars Åkeri
+                td 100 - 199 t.kr.
+                td Transport
+                td.upload-date 2013-04-11 11:28
+              tr
+                td Animals AB
+                td 20 - 29 t.kr.
+                td Transport
+                td.upload-date 2013-04-10 12:33
+  include ../partials/_footer

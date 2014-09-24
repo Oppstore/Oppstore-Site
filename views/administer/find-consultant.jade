@@ -1,0 +1,45 @@
+extends ../templates/layout
+block vars
+  - var bodyClass = 'develop'
+block content
+  include ../partials/_adbanner
+  include ../partials/_nav
+  section.container
+    .wrapper
+      .header-tutorial
+        h1 Hitta konsult
+      .paragraph-tutorial
+        p.
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        p.
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      .container-tool
+         form
+          fieldset
+            h5 Företagsuppgifter
+            .container-input
+              label
+                input(type="checkbox" class="checkbox" name="checkbox_button" value="checkbox_2")
+                | Jag behöver hjälp med analys för att säkerställa problemet
+              label(for='select_element2') Branch:
+                select(name='select_element2')
+                  option(value="1") Alternativ 1
+                  option(value="2") Alternativ 2
+                  option(value="3") Alternativ 3
+              label(for='select_element2') Geografi:
+                select(name='select_element2')
+                  option(value="1") Alternativ 1
+                  option(value="2") Alternativ 2
+                  option(value="3") Alternativ 3
+              label Partnerform:
+              label
+                input(type="radio" class="radio" name="radio_button" value="radio_1")
+                | Projekt
+              label
+                input(type="radio" class="radio" name="radio_button" value="radio_2")
+                | Tillsvidare
+
+  section.tool-nav
+    button(type='button' disabled='disabled').button.button-tool-nav Föregående steg
+    a(href='#').button.button-tool-nav.next Nästa steg
+  include ../partials/_footer
