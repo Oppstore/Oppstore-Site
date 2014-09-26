@@ -16,6 +16,7 @@ $bottom-nav-button: 1
 $button-profile-sub-menu-background: #FFF
 $button-profile-sub-menu-size: 25px
 $button-profile-sub-menu-drop-shadow: 0px 2px 3px 0px rgba(0,0,0,0.12)
+$button-mobile-profile-background: #95a5a6
 
 header.navigation
   background-color: $navigation-background
@@ -40,11 +41,11 @@ header.navigation
   
   // Mobile view
   .navigation-menu-button
-    color: #000
+    color: #FFF
     display: block
     float: right
-    line-height: $navigation-height
-    margin: 0
+    line-height: $navigation-height / 4
+    margin: 20px
     padding-right: 1em
     +media($horizontal-bar-mode)
       display: none
@@ -340,6 +341,9 @@ header.desktop
   position: absolute
   bottom: 5px
   left: 55px
+
+.button-profile
+  background-color: $button-mobile-profile-background
 
 .button-profile-sub-menu
   background-color: $button-profile-sub-menu-background

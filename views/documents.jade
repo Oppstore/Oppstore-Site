@@ -1,0 +1,72 @@
+extends templates/layout
+block vars
+  - var bodyClass = 'documents'
+block content
+  include partials/_adbanner
+  include partials/_nav
+  section.container
+    .wrapper
+      .row
+        h1 Färdiga affärsdokument
+      .row
+        .search-bar
+          .search-and-submit
+            input(type='search', placeholder='Sök')
+            button(type='submit')
+              img(src='https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon-black.png', alt='')
+      .row.row-search-results
+        .container-search-criterias
+          .row.accordion
+            a.js-accordion-trigger(href='javascript:void(0)')
+              h5 Sökkriterier
+            .row.accordion-content  
+              .row.search-criterias
+                h6 Katgori
+                ul
+                  li 
+                    a(href="#") Utveckla
+                  li 
+                    a(href="#") Avveckla
+                  li 
+                    a(href="#") Förvärva
+                  li 
+                    a(href="#") Förvalta
+        .container-documents
+          .grid-documents
+            a.grid-item-documents
+              img(src='http://placehold.it/600x600')
+              | Affärsdokument
+            a.grid-item-documents
+              img(src='http://placehold.it/600x600')
+              | Affärsdokument
+            a.grid-item-documents
+              img(src='http://placehold.it/600x600')
+              | Affärsdokument
+            a.grid-item-documents
+              img(src='http://placehold.it/600x600')
+              | Affärsdokument
+            a.grid-item-documents
+              img(src='http://placehold.it/600x600')
+              | Affärsdokument
+            a.grid-item-documents
+              img(src='http://placehold.it/600x600')
+              | Affärsdokument
+            a.grid-item-documents
+              img(src='http://placehold.it/600x600')
+              | Affärsdokument
+            a.grid-item-documents
+              img(src='http://placehold.it/600x600')
+              | Affärsdokument
+            a.grid-item-documents
+              img(src='http://placehold.it/600x600')
+              | Affärsdokument
+            a.grid-item-documents
+              img(src='http://placehold.it/600x600')
+              | Affärsdokument
+            a.grid-item-documents
+              img(src='http://placehold.it/600x600')
+              | Affärsdokument
+            a.grid-item-documents
+              img(src='http://placehold.it/600x600')
+              | Affärsdokument
+  include partials/_footer

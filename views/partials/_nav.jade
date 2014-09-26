@@ -2,7 +2,7 @@ header.navigation.mobile
   .navigation-wrapper
     a.logo(href='/')
       img(src='../public/images/oppstore_logo.svg', alt='')
-    a#js-mobile-menu.navigation-menu-button(href='') Meny
+    a#js-mobile-menu.navigation-menu-button.button(href='') Meny
     .nav
       ul#navigation-menu
         .search-bar
@@ -14,7 +14,9 @@ header.navigation.mobile
           a.more(href='javascript:void(0)') Utveckla
           ul.submenu
             li
-              a(href='#') Färdiga affärsdokument
+              a(href='/develop/index.html') Utveckla - startsida
+            li
+              a(href='/documents.html') Färdiga affärsdokument
             li
               a(href='/develop/findinvestors-part-1.html') Sök kapital
             li
@@ -23,29 +25,42 @@ header.navigation.mobile
           a(href='javascript:void(0)') Avveckla
           ul.submenu
             li
-              a(href='#') Färdiga affärsdokument
+              a(href='/liquidate/index.html') Avveckla - startsida
             li
-              a(href='#') Sälj &amp; likvidera företag
+              a(href='/documents.html') Färdiga affärsdokument
             li
-              a(href='#') Sälj inventarier 
+              a(href='/liquidate/liquidate-company-part-1.html') Likvidera företag
+            li
+              a(href='/liquidate/sell-inventory') Sälj inventarier 
         li.mobile-nav-link.acquire.more
           a(href='javascript:void(0)') Förvärva
           ul.submenu
             li
-              a(href='#') Färdiga affärsdokument
+              a(href='/acquire/index.html') Förvärva - startsida
             li
-              a(href='#') Hitta företag till salu
+              a(href='/documents.html') Färdiga affärsdokument
             li
-              a(href='#') Hitta inventarie till salu
+              a(href='/acquire/find-company.html') Företag till salu
+            li
+              a(href='/acquire/find-inventory.htm') Inventarie till salu
         li.mobile-nav-link.administer.more
           a(href='javascript:void(0)') Förvalta
           ul.submenu
             li
-              a(href='#') Färdiga affärsdokument
+              a(href='/administer/index.html') Förvalta - startsida
+            li
+              a(href='/documents.html') Färdiga affärsdokument
             li
               a(href='/administer/find-consulting-jobs.html') Konsulttjänster
-        li.mobile-nav-link
-          a.user(href='/profile.html') Logga in
+        li.mobile-nav-link.button-profile.more
+          a(href='javascript:void(0)') Min profil
+          ul.submenu
+            li
+              a(href='/profile.html') Profilsida
+            li
+              a(href='#') Profilinställningar
+            li
+              a(href='#') Logga ut
 
   //- .tool-menu
   //-   ul
@@ -82,14 +97,14 @@ header.navigation.desktop
         .container-profile-sub-menu
             .dropdown-button.button-profile-sub-menu
             ul.menu
-              li Inställningar
+              li Profilinställningar
               li Logga ut
 
 
   .desktop-sub-menu
     ul
       li
-        a(href='#') Färdiga affärsdokument
+        a(href='/documents.html') Färdiga affärsdokument
       li
         a(href='/develop/findinvestors-part-1.html') Sök kapital
       li

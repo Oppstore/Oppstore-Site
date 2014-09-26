@@ -1,0 +1,26 @@
+.container-documents
+  margin-top: 2em
+  +span-columns(12)
+
+  +media($large-screen)
+    margin-top: 0
+    +span-columns(9)
+
+.grid-documents
+  +span-columns(12)
+
+.grid-item-documents
+  text-align: center
+  margin-bottom: 2em
+  font-weight: 700
+  +span-columns(12)
+
+  +media($medium-screen)
+    +span-columns(3)
+
+  &:nth-child(4n)
+    +media($medium-screen)
+      margin-right: 0
+
+  &:hover
+    opacity: 0.75 

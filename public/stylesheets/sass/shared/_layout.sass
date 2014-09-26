@@ -23,3 +23,15 @@ $wrapper-padding: 20px
 
 .right
   float: right
+
+.container-half
+  +span-columns(12)
+
+  +media($medium-screen)
+    +span-columns(6)
+
+.container-one-third
+  +span-columns(12)
+
+  +media($medium-screen)
+    +span-columns(4)

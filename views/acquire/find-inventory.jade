@@ -1,6 +1,6 @@
 extends ../templates/layout
 block vars
-  - var bodyClass = 'administer'
+  - var bodyClass = 'find-inventory'
 block content
   include ../partials/_adbanner
   include ../partials/_nav
@@ -54,7 +54,8 @@ block content
               th.upload-date Upplagd
             tbody
               tr
-                td Lastbilar
+                td 
+                  a(href='/acquire/inventory.html') Lastbilar
                 td Jennys Åkeri
                 td Transport
                 td.upload-date 2013-04-12 12:54

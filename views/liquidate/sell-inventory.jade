@@ -1,13 +1,13 @@
 extends ../templates/layout
 block vars
-  - var bodyClass = 'find-consultant'
+  - var bodyClass = 'sell-inventory'
 block content
   include ../partials/_adbanner
   include ../partials/_nav
   section.container
     .wrapper
       .header-tutorial
-        h1 Hitta konsult
+        h1 Sälj inventarie
       .paragraph-tutorial
         p.
           "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -18,11 +18,14 @@ block content
           fieldset
             h5 Företagsuppgifter
             .container-input
-              label
-                input(type="checkbox" class="checkbox" name="checkbox_button" value="checkbox_2")
-                | Jag behöver hjälp med analys för att säkerställa problemet
-              label(for='select_element2') Branch:
-                select(name='select_element2')
+              label(for='text_field1') Företagsnamn:
+                input#text_field1(type='text')
+              label(for='text_field2') Organisationsnummer:
+                input#text_field2(type='text')
+              label(for='text_field2') Firmatecknare:
+                input#text_field2(type='text')
+              label(for='select_element1') Branch:
+                select(name='select_element1')
                   option(value="1") Alternativ 1
                   option(value="2") Alternativ 2
                   option(value="3") Alternativ 3
@@ -31,15 +34,20 @@ block content
                   option(value="1") Alternativ 1
                   option(value="2") Alternativ 2
                   option(value="3") Alternativ 3
-              label Partnerform:
-              label
-                input(type="radio" class="radio" name="radio_button" value="radio_1")
-                | Projekt
-              label
-                input(type="radio" class="radio" name="radio_button" value="radio_2")
-                | Tillsvidare
+              label(for='text_field3') Inventarie:
+                input#text_field3(type='text')
+              label(for='text_field4') Antal:
+                input#text_field4(type='text')
+              label(for='text_field4') Värde:
+                input#text_field4(type='text')
+              label(for='text_area1') Beskrivning av inventarie:
+                textarea#text_area1
+              label(for='select_element3') Hur ska intressenter få kontakta dig?:
+                select(name='select_element3')
+                  option(value="1") Direktkontakt
+                  option(value="2") Anonymt via Oppstore
 
   section.tool-nav
     button(type='button' disabled='disabled').button.button-tool-nav Föregående steg
-    a(href='#').button.button-tool-nav.next Nästa steg
+    a(href='#').button.button-tool-nav.next Lägg upp
   include ../partials/_footer

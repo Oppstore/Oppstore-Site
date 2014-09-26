@@ -1,0 +1,38 @@
+extends templates/layout
+block vars
+  - var bodyClass = 'about'
+block content
+  include partials/_adbanner
+  include partials/_nav
+  section.container
+    .hero
+      .inner-hero
+        .copy-hero
+            h1.header-hero Om Oppstore
+            p.tagline-hero
+              | A few reasons why this product is worth using, who it's for and why they need it.
+    .wrapper
+      .row
+        .image-about
+          img(src='../public/images/ikon1.jpg')
+        .container-paragraph-about
+          h1 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          .paragraph-about
+            p.
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          .paragraph-about
+            p.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+      .row
+        .container-paragraph-about
+          h1 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          .paragraph-about
+            p.
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          .paragraph-about
+            p.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.   
+        .image-about
+          img(src='../public/images/ikon2.jpg')
+  include partials/_footer
+
