@@ -1,4 +1,4 @@
-.container-news
+.container-news, .blog-container .post-list
   +span-columns(12)
   
   +media($medium-screen)
@@ -17,3 +17,24 @@
 
   article
     padding: 1em
+
+.sidebar-news
+  +span-columns(12)
+  
+  +media($medium-screen)
+    +span-columns(3)
+
+  +media($large-screen)
+    +span-columns(5)
+
+  .side-panel
+    +span-columns(12)
+
+    +media($large-screen)
+      +span-columns(3 of 5)
+
+  .ad-sidebar
+    +span-columns(12)
+
+    +media($large-screen)
+      +span-columns(2 of 5)

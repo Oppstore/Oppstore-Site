@@ -44,12 +44,14 @@ $container-summary-border-color: #DDD
 
 .container-tool
   +span-columns(12)
+  position: relative
 
   +media($large-screen)
     +span-columns(6)
 
 .container-table-tool
   +fill-parent
+  position: relative
 
 .container-input
   margin-top: 0.5em
@@ -81,19 +83,26 @@ $container-summary-border-color: #DDD
   border: 1px solid $container-summary-border-color
   padding: 1.5em
   margin-bottom: 2em
+  position: relative
 
 .container-summary-businessplan
   +span-columns(12)
 
   +media($large-screen)
-    +span-columns(4)
+    +span-columns(5)
 
 .container-summary-cash-forecast
   +span-columns(12)
 
   +media($large-screen)
-    +span-columns(8)
+    +span-columns(7)
 
 .list-summary
   li
     margin-bottom: 0.5em
+
+.summary-row
+  display: block
+
+.edit-row
+  display: none

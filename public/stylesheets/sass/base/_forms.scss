@@ -71,3 +71,11 @@ select {
   max-width: 100%;
   width: auto;
 }
+
+.has-error {
+  margin-bottom: 0.75em;
+
+  input, textarea {
+    margin-bottom: 0;
+  }
+}

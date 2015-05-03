@@ -27,7 +27,9 @@ header.navigation
     +clearfix
     +outer-container
     position: relative
-    z-index: 9999
+    +media($horizontal-bar-mode)
+      padding-left: 20px
+      padding-right: 20px
 
   .logo
     float: left
@@ -60,20 +62,20 @@ header.navigation
     +media($horizontal-bar-mode)
       position: relative
       float: right
+      width: 68%
+      height: 81px
 
   ul#navigation-menu
     -webkit-transform-style: preserve-3d
     // stop webkit flicker
-    clear: both
+    float: right
     display: none
-    margin: 0 auto
     overflow: visible
     padding: 0
-    width: 100%
     z-index: 9999
 
     +media($horizontal-bar-mode)
-      display: inline
+      display: block
       margin: 0
       padding: 0
 
@@ -149,13 +151,30 @@ header.navigation
     font-weight: $navigation-active-font-weight
     z-index: $top-nav-button
 
-  a.user
+  .user
+    float: left
+    width: 60px
+    height: 60px
+    margin-top: 15px
     padding: 0
     margin-left: 1em
+    overflow: hidden
+    border-radius: 30px
+
+    &:after
+      content: none
 
     img
       width: 60px
-      margin-top: 15px
+
+    .name-container
+      width: 100%
+      height: 100%
+      text-align: center
+      line-height: 60px
+      background-color: $primary-background-color
+      color: $primary-font-color
+      font-weight: 700
   
   // Sub menus
   li.more
@@ -226,7 +245,6 @@ header.navigation
       clear: none
 
   .tool-menu, .desktop-sub-menu
-    background-color: $green
     height: $sub-navigation-height
 
     ul
@@ -248,6 +266,18 @@ header.navigation
   .desktop-sub-menu
     ul li
       border: none
+
+  .develop-menu
+    background-color: $green
+
+  .liquidate-menu
+    background-color: $orange
+
+  .acquire-menu
+    background-color: $dark-blue
+
+  .administer-menu
+    background-color: $blue
 
 header.mobile
   display: block
@@ -297,6 +327,7 @@ header.desktop
   display: none
   +media($horizontal-bar-mode)
     display: block
+    border-bottom: 1px solid $light-gray
 
   ul li.desktop-nav-link
     background: transparent
@@ -327,20 +358,38 @@ header.desktop
         border-width: 35px 0 0 25px
 
   .search-bar
-    position: absolute
     display: inline-block
-    top: 10px
-    right: 98px
-    width: 210px
+    margin-top: 8px
+    margin-bottom: 8px
+    margin-right: 16px
+    float: right
+    width: 270px
 
 .container-user
   display: inline-block
   position: relative
+  float: right
+  z-index: 9999
 
 .container-profile-sub-menu
   position: absolute
   bottom: 5px
   left: 55px
+
+  .menu li
+    padding: 0
+
+    &:hover
+      background-color: $dropdown-background
+
+    a
+      width: 100%
+      padding: $dropdown-padding
+      color: $primary-font-color
+
+      &:hover
+        background-color: $dropdown-background-hover
+        text-decoration: none
 
 .button-profile
   background-color: $button-mobile-profile-background
@@ -354,3 +403,51 @@ header.desktop
   -moz-box-shadow: $button-profile-sub-menu-drop-shadow
   box-shadow: $button-profile-sub-menu-drop-shadow
   padding: 0
+
+.navigation-top-bar
+  background-color: $primary-background-color
+  padding-top: 10px
+  padding-bottom: 10px
+
+  ul 
+    float: right
+
+    li
+      float: left
+
+      a
+        padding-right: 0
+        padding-left: 2em
+        color: lighten($primary-font-color, 20)
+
+        &:hover
+          color: lighten($primary-font-color, 20)
+
+.top-bar-cart
+  border-left: 1px solid #DADADA
+  padding-left: 1em
+
+  a
+    padding-right: 0 !important
+    padding-left: 0 !important
+
+.navigation-update-details-bar
+  background-color: $red
+  padding-top: 10px
+  padding-bottom: 10px
+
+  p, a
+    color: #FFFFFF
+
+    a
+      padding: 0
+      text-decoration: underline
+
+      &:hover
+        color: darken(#FFFFFF, 20)
+
+.mobile-button
+  padding-right: 2em
+
+.logout a
+  border-top: 1px solid #DADADA

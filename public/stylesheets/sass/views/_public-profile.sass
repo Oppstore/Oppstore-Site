@@ -1,0 +1,47 @@
+.public-profile-main
+  +span-columns(12)
+
+  +media($medium-screen)
+    +span-columns(8)
+
+  .tagline-block
+    float: left
+    width: 100%
+    border-left: 3px solid $green
+    margin-bottom: 12px
+
+    p
+      width: 95%
+      float: right
+      margin: 6px 0
+
+.public-profile-sidebar
+  +span-columns(12)
+
+  +media($medium-screen)
+    +span-columns(4)
+
+  .logo
+    text-align: center
+    margin-bottom: 15px
+
+    img
+      max-width: 75%
+
+  .sidebar-content
+    background-color: $light-gray
+
+  .top
+    background-color: $green
+    color: #FFFFFF
+    padding: 15px
+    font-size: $h5-font-size
+
+  .list
+    padding: 15px
+
+    ul
+      margin-bottom: 12px
+
+      &:last-child
+        margin-bottom: 0

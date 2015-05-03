@@ -17,8 +17,12 @@ $profile-container-offer-color: #EDEFF1
   margin-bottom: 1.5em
 
   &:hover
+    color: $profile-button-color
     border-bottom-width: $profile-button-border-size * 3
     background-color: transparent
+
+  &:active, &:focus
+    color: $profile-button-color
 
   +media($medium-screen)
     padding-left: $profile-button-padding
@@ -53,6 +57,9 @@ $profile-container-offer-color: #EDEFF1
 
   +media($medium-screen)
     +span-columns(4)
+
+.information-row
+  margin-bottom: 15px
 
 .button-reupload-job
   margin-top: 1em

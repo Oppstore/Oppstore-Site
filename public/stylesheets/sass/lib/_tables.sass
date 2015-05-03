@@ -1,5 +1,5 @@
 $table-background: #FFF
-$table-border-color: darken($table-background, 5)
+$table-border-color: $base-border-color
 $table-hover-color: $table-border-color
 $table-padding: 0.75em
 
@@ -7,6 +7,8 @@ table
 
 th, td
   padding: $table-padding
+  
+td  
   border-color: $table-border-color
 
 .remove-tablecell
@@ -19,6 +21,17 @@ th, td
   td
     overflow: hidden
     text-overflow: ellipsis
+    padding: 0
+
+  a
+    height: 100%
+    width: 100%
+    display: block
+    padding: 0.75em 0
+
+    &:hover
+      text-decoration: none
+      color: $primary-bread-font-color
 
 .upload-date
   display: none

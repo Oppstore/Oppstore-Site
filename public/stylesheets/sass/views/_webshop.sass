@@ -1,0 +1,163 @@
+.order-registration-row
+  float: left
+  width: 100%
+
+.order-form-container
+  +span-columns(12)
+
+  +media($medium-screen)
+    +span-columns(8)
+
+  .js-accordion-trigger
+    margin-bottom: 15px
+
+.order-summary
+  +span-columns(4)
+
+.shop-catalogue
+  text-align: center
+
+.shop-product-small
+
+  +media($medium-screen)
+    text-align: center
+
+  .image a
+    opacity: 1.0
+
+    &:hover
+      opacity: 0.75
+
+.catalogueList, .productSmall
+  +span-columns(12)
+
+  .catalogueItem, .catalogueItemLast, .productItem, .productItemLast
+    +span-columns(12)
+    margin-bottom: 20px
+
+    +media($medium-screen)
+      +span-columns(3)
+    
+  .catalogueItemLast, .productItemLast
+    +media($medium-screen)
+      margin-right: 0
+
+.shop-main
+
+  .header
+    float: left
+    margin-top: 0
+    margin-bottom: 10px
+    background: $primary-background-color
+    padding: 10px 15px
+    width: 100%
+  
+  .breadcrumbs
+    +span-columns(12)
+
+    +media($medium-screen)
+      +span-columns(6)
+
+.cart-summary
+  +span-columns(12)
+
+  +media($medium-screen)
+    +span-columns(6)
+
+#catCartSummary
+  float: left
+  margin-top: 8px
+
+  +media($medium-screen)
+    float: right
+    margin-top: 0
+
+.display-cart
+
+  img
+    max-height: 18px
+    margin-left: 10px
+    margin-right: 5px
+
+.productSubmitInput
+  display: inline-block !important
+  background-color: #FFFFFF !important
+  color: $base-font-color !important
+  font-weight: 500 !important
+  padding: 1em !important
+  margin: 0.5em 0 0.5em 0 !important
+  line-height: 0.5em !important
+  vertical-align: baseline !important
+  border-radius: 0 !important
+  border: 1px solid $base-font-color !important
+
+.shop-product-large
+  
+  .product-image, .product-description
+    +span-columns(12)
+
+    +media($medium-screen)
+      +span-columns(6)
+
+#catshopclear, #catshopbuy
+  padding: 12px 18px
+
+#catshopclear
+  background-color: $primary-background-color
+
+#catshopbuy
+  background-color: $green
+  color: #FFF
+
+.card-number, .ccv-number
+  +span-columns(12)
+
+.card-number
+  +media($medium-screen)
+    +span-columns(8)
+
+.ccv-number
+  +media($medium-screen)
+    +span-columns(4)
+
+.payment-method
+  display: none
+
+.PaymentMethodType
+  margin-left: 5px
+
+  &:first-child
+    margin-left: 0
+
+// Shopping cart
+.cart-product-image
+  max-height: 80px
+  vertical-align: middle
+  margin-right: 15px
+
+.cart-product-quantity
+  border-radius: 0 !important
+  margin: 0 !important
+
+.product-information
+  font-weight: 700
+
+table.cart td, th
+  padding: 0.75em 0
+
+tr.total td
+  border-bottom: none
+
+.cart-button-container
+  float: left
+  width: 100%
+  margin-top: 20px
+
+// Order registration
+.order-registration-header
+  display: block
+  background-color: #E5E8EC
+  padding: 0.5em 1em 0.5em 1em
+
+.order-registration-section .row
+  padding: 0.5em 1em 1em 1em

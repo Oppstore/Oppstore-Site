@@ -1,3 +1,5 @@
+$shortcut-background-color: #95a5a6
+
 .container-shortcut
   +span-columns (12)
 
@@ -9,6 +11,30 @@
 
   text-align: center
 
+  .develop
+    background-color: $green
+
+    &:hover
+      background-color: lighten($green, 15)
+
+  .administer
+    background-color: $blue
+
+    &:hover
+      background-color: lighten($blue, 15)
+
+  .liquidate
+    background-color: $orange
+
+    &:hover
+      background-color: lighten($orange, 15)
+
+  .acquire
+    background-color: $dark-blue
+
+    &:hover
+      background-color: lighten($dark-blue, 15)
+
 .shortcut
   +span-columns(6)
 
@@ -16,15 +42,23 @@
     +fill-parent
 
   display: block
-  margin-bottom: 2em
+  margin-bottom: 20px
   font-size: 1.2em
   font-weight: 700
+  background-color: $shortcut-background-color
+  color: #FFF
+  padding: 15px
+  word-wrap: break-word
 
-.icon
-  margin-left: auto
-  margin-right: auto
-  height: 70px
-  width: 70px
-  border-radius: 35px
-  background-color: desaturate($green, 20)
-  margin-bottom: 0.5em
+  &:hover
+    text-decoration: none
+    color: #FFF
+    background-color: lighten($shortcut-background-color, 15)
+
+  .icon-container
+    float: left
+    width: 100%
+    text-align: center
+
+    img
+      max-width: 48px
