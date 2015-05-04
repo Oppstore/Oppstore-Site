@@ -200,3 +200,38 @@ $(document).ready(function() {
 });
 
 /* *** Carousel end *** */
+
+/* *** Form submission *** */
+
+$(document).ready(function() { 
+
+    $('#formSubmit').click(function() {
+
+      // copy company name
+      $('#ItemName').val($('#CAT_Custom_587952_327').val());
+
+      // copy company description
+      $('#ItemDescription').val($('#CAT_Custom_588822_327').val());
+
+      // copy company localzation 
+      $('#CAT_Custom_6').val($('#CAT_Custom_588820_327').val());
+
+      // copy company sector 
+      $('#CAT_Custom_7').val($('#CAT_Custom_588821_327').val());
+
+      // copy company url
+      $('#CAT_Custom_5').val($('#WebAddress').val());
+
+      // copy company email
+      $('#CAT_Custom_3').val($('#CAT_Custom_588830_327').val());
+
+      // copy company logo
+      $('#CAT_Custom_4').val($('#CAT_Custom_588838_327').val());
+
+      $('#profileSubmit').submit();
+        $('#profileSettings').ajaxSubmit();
+        return false; 
+    });
+
+});
+/* *** Form submission end *** */
