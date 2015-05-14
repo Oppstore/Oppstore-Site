@@ -37,6 +37,12 @@
 
     +media($medium-screen)
       +span-columns(3)
+
+  .catalogueItem, .productItem
+    +media($medium-screen)
+      &:nth-child(4n+5)
+        clear: left
+
     
   .catalogueItemLast, .productItemLast
     +media($medium-screen)
@@ -161,3 +167,7 @@ tr.total td
 
 .order-registration-section .row
   padding: 0.5em 1em 1em 1em
+
+#catCartDetails
+  +outer-container
+  padding: 30px $wrapper-padding

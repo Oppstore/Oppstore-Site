@@ -83,12 +83,17 @@ $container-summary-border-color: #DDD
 
 .user-input-value, .calculated-value
   float: left
-  width: 50%
+  width: 100%
+
+  +media($medium-screen)
+    width: 50%
 
 .value-row
-  background-color: $container-financial-year-color
-  padding: 1.5em
   margin-bottom: 1.5em
+
+  +media($medium-screen)
+    background-color: $container-financial-year-color
+    padding: 1.5em
 
 .container-summary
   +clearfix
@@ -109,9 +114,23 @@ $container-summary-border-color: #DDD
 .container-summary-cash-forecast
   +span-columns(12)
 
-.list-summary
+.info-summary
+  
   li
+    float: left
+    width: 100%
     margin-bottom: 0.5em
+
+    .info-header, .info-value
+      float: left
+      width: 100%
+
+    +media($medium-screen)
+      .info-header
+        width: 25%
+
+      .info-value
+        width: 75%
 
 .summary-row
   display: block

@@ -27,9 +27,7 @@ header.navigation
     +clearfix
     +outer-container
     position: relative
-    +media($horizontal-bar-mode)
-      padding-left: 20px
-      padding-right: 20px
+    padding: 0px 20px
 
   .logo
     float: left
@@ -49,6 +47,7 @@ header.navigation
     line-height: $navigation-height / 4
     margin: 20px
     padding-right: 1em
+
     +media($horizontal-bar-mode)
       display: none
 
@@ -68,7 +67,8 @@ header.navigation
   ul#navigation-menu
     -webkit-transform-style: preserve-3d
     // stop webkit flicker
-    float: right
+    float: left
+    width: 100%
     display: none
     overflow: visible
     padding: 0
@@ -76,6 +76,8 @@ header.navigation
 
     +media($horizontal-bar-mode)
       display: block
+      float: right
+      width: auto
       margin: 0
       padding: 0
 
