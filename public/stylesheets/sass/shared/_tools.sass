@@ -68,6 +68,9 @@ $container-summary-border-color: #DDD
   margin-bottom: 1.5em
   margin-right: 1.5em
 
+.employees-salary, .inflation
+  +span-columns(6)
+
 .revenue, .profit, .employees
   +span-columns(4)
 
@@ -78,6 +81,15 @@ $container-summary-border-color: #DDD
   &:nth-child(2n+2)
     background-color: $container-financial-year-color
 
+.user-input-value, .calculated-value
+  float: left
+  width: 50%
+
+.value-row
+  background-color: $container-financial-year-color
+  padding: 1.5em
+  margin-bottom: 1.5em
+
 .container-summary
   +clearfix
   border: 1px solid $container-summary-border-color
@@ -85,17 +97,17 @@ $container-summary-border-color: #DDD
   margin-bottom: 2em
   position: relative
 
+.container-canvas
+  +span-columns(12)
+
+  +media($medium-screen)
+    +span-columns(4)
+
 .container-summary-businessplan
   +span-columns(12)
 
-  +media($large-screen)
-    +span-columns(5)
-
 .container-summary-cash-forecast
   +span-columns(12)
-
-  +media($large-screen)
-    +span-columns(7)
 
 .list-summary
   li
