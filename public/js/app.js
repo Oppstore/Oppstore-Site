@@ -233,8 +233,8 @@ if ($("body").hasClass("find-investor-summary")) {
       datasets: [{
         label: "Scenario 1",
         fillColor: "rgba(0,0,0,0.0)",
-        strokeColor: "#ACC26D",
-        pointColor: "#ACC26D",
+        strokeColor: "#8BB654",
+        pointColor: "#8BB654",
         pointHighlightFill: "#FFF",
         data: scen1Revenue
       },
@@ -261,8 +261,8 @@ if ($("body").hasClass("find-investor-summary")) {
       datasets: [{
         label: "Scenario 1",
         fillColor: "rgba(0,0,0,0.0)",
-        strokeColor: "#ACC26D",
-        pointColor: "#ACC26D",
+        strokeColor: "#8BB654",
+        pointColor: "#8BB654",
         pointHighlightFill: "#FFF",
         data: scen1Profit
       },
@@ -289,8 +289,8 @@ if ($("body").hasClass("find-investor-summary")) {
       datasets: [{
         label: "Scenario 1",
         fillColor: "rgba(0,0,0,0.0)",
-        strokeColor: "#ACC26D",
-        pointColor: "#ACC26D",
+        strokeColor: "#8BB654",
+        pointColor: "#8BB654",
         pointHighlightFill: "#FFF",
         data: scen1EmployeesCost
       },
@@ -374,8 +374,8 @@ $(document).ready(function() {
       $('#CAT_Custom_4').val($('#CAT_Custom_588838_327').val());
 
       $('#profileSubmit').submit();
-        $('#profileSettings').ajaxSubmit();
-        return false; 
+      $('#profileSettings').ajaxSubmit();
+      return false; 
     });
 
 });

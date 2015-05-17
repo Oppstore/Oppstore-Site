@@ -1,6 +1,9 @@
 .container-about
   +span-columns(12)
 
+.about-row
+  margin-bottom: 20px
+
 .image-about
   text-align: center
   +span-columns(12)
@@ -12,15 +15,33 @@
     max-height: 250px
 
 .container-paragraph-about
-  margin-bottom: 30px
   +span-columns(12)
 
   +media($medium-screen)
     +span-columns(8)
-    margin-bottom: 60px
 
 .paragraph-about
   +span-columns(12)
 
   +media($large-screen)
     +span-columns(6)
+
+.contact-container
+  +span-columns(12)
+
+  +media($medium-screen)
+    +span-columns(10)
+    +shift(1)
+
+  +media($large-screen)
+    +span-columns(8)
+    +shift(2)
+
+  .contact-header
+    text-align: center
+
+  .contact-information 
+    +span-columns(12)
+
+    +media($medium-screen)
+      +span-columns(1 of 3)
