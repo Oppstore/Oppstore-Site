@@ -1,0 +1,66 @@
+.guide-sidebar
+  +span-columns(12)
+  border-bottom: $base-border
+  margin-bottom: 20px
+  padding-bottom: 20px
+
+  +media($medium-screen)
+    +span-columns(4 of 12)
+    border-bottom: none
+    margin: 0
+    padding: 0
+
+  .guide-nav .child
+    padding-left: 0.75em
+
+.guide-content
+  +span-columns(12)
+
+  +media($medium-screen)
+    +span-columns(8 of 12 last)
+    float: right
+
+  ul
+    @extend %default-ul
+
+  hr
+    border-color: $primary-background-color
+    margin: 3em 0
+
+.guide-card
+  float: left
+  width: 100%
+  background-color: $primary-background-color
+  padding: 15px 20px
+  margin-bottom: 0.75em
+
+  ul
+    @extend %default-ul
+
+  p:last-child
+    margin-bottom: 0
+
+  .contact-information
+    float: left
+    width: 100%
+    text-align: center
+    margin-top: 2px
+
+    ul
+      display: inline-block
+      list-style-type: none
+      padding-left: 0
+      margin: 0
+
+      li
+        float: left
+        margin-right: 14px
+
+        &:last-child
+          margin-right: 0px
+
+        img
+          float: left
+          height: 24px
+          width: 24px
+          margin-right: 5px

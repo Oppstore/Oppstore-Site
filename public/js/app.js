@@ -136,6 +136,18 @@ if ($("body").hasClass("find-investor-summary")) {
     var inflation = parseFloat( $("#inflation").val() / 100 );
     /* *** Employees salary and inflation *** */
 
+    var balance = parseFloat( $("#investmentCost").val() );
+    var periods = parseFloat( $("#runningTime").val() );
+    var rate = parseFloat( $("#interestRate").val() / 100 );
+    var yearlyPayment = (rate /(1-(Math.pow((1+rate),-(periods)))))*balance;
+
+    for (var i=0; i<periods; i++) {
+      var interestForMonth = balance * rate;
+      var principalForMonth = yearlyPayment - interestForMonth;
+      balance -= yearlyPayment;
+      $('#totalRate').append(interestForMonth[i] + principalForMonth[i] + balance[i]);
+    }
+
     /* *** Revenue array and calculation *** */
     var revenue = $(".revenueInput").map(function() {
         return parseFloat(this.value);
@@ -375,8 +387,37 @@ $(document).ready(function() {
 
       $('#profileSubmit').submit();
       $('#profileSettings').ajaxSubmit();
-      return false; 
+      return false;
     });
 
 });
 /* *** Form submission end *** */
+
+/* ** sticky nav for guides *** */
+$(document).ready(function(){
+  if ($(window).width() >= 640) {
+    $(".guide-sidebar").stick_in_parent({
+      parent: '.wrapper',
+      offset_top: 20
+    })
+    .on("sticky_kit:stick", function(e) {
+      $(".is_stuck").parent().css("max-width", "357px");
+    });
+  }
+
+  $(window).resize(function() {
+    if ($(window).width() < 640) {
+      $(".guide-sidebar").trigger("sticky_kit:detach");
+    }
+    else {
+      $(".guide-sidebar").stick_in_parent({
+        parent: '.wrapper',
+        offset_top: 20
+      })
+      .on("sticky_kit:stick", function(e) {
+        $(".is_stuck").parent().css("max-width", "357px");
+      });
+    }
+  });
+});
+/* ** sticky nav for guides end *** */
