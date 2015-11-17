@@ -1,0 +1,44 @@
+.topic-list
+
+  table.topic
+    margin: 0
+
+  table.topic:nth-child(2n+2)
+    background-color: $light-gray
+
+  td
+    padding: 0
+
+  table.topic td
+    padding: 0.75em
+
+.forum-container .editor
+  border-bottom: 1px solid $light-gray
+  margin-bottom: 30px
+
+.forum-posts-container
+
+  .post
+    .author
+      background-color: $light-gray
+      border: none
+
+    .post-message
+      border: none
+
+  .action a
+    display: inline-block
+    background-color: $button-color
+    color: $button-primary-font-color
+    padding: $button-padding $button-padding $button-padding $button-padding
+    margin: $button-padding / 2 0 $button-padding / 2 0
+    line-height: $button-padding / 2
+
+    &:hover
+      color: $button-primary-font-color
+      background-color: lighten($button-color, 10)
+      +transition(background-color 0.1 linear)
+      text-decoration: none
+
+  h3.name
+    font-size: 1em

@@ -83,6 +83,18 @@ $profile-container-offer-color: #EDEFF1
 .login-button
   float: left
 
+.login-text
+  +span-columns(12)
+  text-align: center
+
+  +media($medium-screen)
+    +span-columns(10 of 12)
+    +shift(1)
+
+  +media($large-screen)
+    +span-columns(8 of 12)
+    +shift(2)
+
 .remember-me
   float: left
   margin-left: 10px
